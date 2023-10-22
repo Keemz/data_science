@@ -1,0 +1,13 @@
+Entities:
+
+Users(User_ID, User_Name, User_Subscription,  User_email, #Follower_ID)
+
+Artists(Artist_ID, Artist_Name, Record_Label_ID, Genre_type)
+
+Tracks(Track_ID, Track_Name, Track_Duration, #Album_ID,#Artist_ID,#Playlist_ID) 
+
+Albums(Album_ID, Album_Name, #Artist_ID, #Playlist_ID, Track_ID, Realease_Date, splash_art, Album_Duration)
+
+Playlist(Playlist_ID, Playlist_Name, Playlist_Duration, #User_ID)
+
+Followers(Follower_ID,  #User_ID, #Artist_ID)
